@@ -1,6 +1,8 @@
 package com.blog.api.payloads;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.blog.api.entities.Category;
 import com.blog.api.entities.User;
@@ -20,4 +22,5 @@ public class PostDto {
 	private Date addDate;
 	private UserDto user;
 	private CategoryDto category;
+	private Set<CommentDto> comments = new HashSet<>();
 }
